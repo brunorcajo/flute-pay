@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento em Análise - Flute Pay</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      img {
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 100% !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+        }
+        .pad-sm {
+          padding: 12px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    "
+  >
+    <!-- Preheader -->
+    <div
+      style="
+        display: none;
+        max-height: 0px;
+        overflow: hidden;
+        font-size: 1px;
+        line-height: 1px;
+        color: #ffffff;
+        opacity: 0;
+      "
+    >
+      Olá {{name}}, seu pagamento com cartão está em análise. Você receberá a
+      confirmação em breve.
+    </div>
+
+    <!-- Outer wrapper -->
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" style="padding: 24px 12px">
+          <!-- Main container -->
+          <table
+            class="container"
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            style="
+              width: 600px;
+              max-width: 600px;
+              background: #ffffff;
+              border-radius: 8px;
+              overflow: hidden;
+            "
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                style="
+                  padding: 20px 24px;
+                  background: #f59e0b;
+                  color: #ffffff;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+              >
+                <h1 style="margin: 0; font-size: 20px; font-weight: 700">
+                  Flute Pay
+                </h1>
+              </td>
+            </tr>
+
+            <!-- Body content -->
+            <tr>
+              <td
+                style="
+                  padding: 24px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #111827;
+                  font-size: 16px;
+                  line-height: 1.5;
+                "
+              >
+                <p style="margin: 0 0 16px 0">Olá <strong>{{name}}</strong>,</p>
+
+                <p style="margin: 0 0 16px 0">
+                  Recebemos a sua tentativa de compra do produto
+                  <strong>{{nome do produto}}</strong> com cartão de crédito.
+                </p>
+
+                <p
+                  style="margin: 0 0 18px 0; color: #f59e0b; font-weight: bold"
+                >
+                  O pagamento está em análise pela operadora do cartão.
+                </p>
+
+                <!-- Detalhes -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  style="margin: 0 0 20px 0"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 12px;
+                        background: #f9fafb;
+                        border: 1px solid #e5e7eb;
+                        border-radius: 6px;
+                        font-size: 15px;
+                      "
+                    >
+                      <p style="margin: 0 0 6px 0">
+                        <strong>Produto:</strong> {{nome do produto}}
+                      </p>
+                      <p style="margin: 0 0 6px 0">
+                        <strong>Valor:</strong> {{valor}}
+                      </p>
+                      <p style="margin: 0">
+                        <strong>Forma de pagamento:</strong> Cartão de Crédito
+                        (final {{final_cartao}})
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <p style="margin: 0 0 16px 0">
+                  Assim que recebermos a confirmação, você será avisado por
+                  e-mail e seu acesso ao produto será liberado automaticamente.
+                </p>
+
+                <p style="margin: 0 0 12px 0; color: #6b7280; font-size: 14px">
+                  O processo costuma levar apenas alguns minutos, mas em alguns
+                  casos pode demorar até algumas horas, dependendo do banco
+                  emissor do cartão.
+                </p>
+
+                <p style="margin: 20px 0 0 0">
+                  Se tiver qualquer dúvida, você pode falar diretamente com o
+                  vendedor:
+                </p>
+
+                <p style="margin: 8px 0 2px 0">
+                  <strong>{{ Nome do Produtor }}</strong><br />
+                  <a
+                    href="mailto:{{ email do produtor }}"
+                    style="color: #0b6cff"
+                    >{{ email do produtor }}</a
+                  >
+                </p>
+
+                <p style="margin: 20px 0 0 0">
+                  Obrigado pela sua paciência,<br /><strong
+                    >Equipe Flute Pay</strong
+                  >
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td
+                style="
+                  padding: 16px 24px;
+                  background: #f9fafb;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 12px;
+                  color: #6b7280;
+                  text-align: center;
+                "
+              >
+                <p style="margin: 0">
+                  Este e-mail foi enviado por Flute Pay. Você receberá uma
+                  atualização assim que o pagamento for processado.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

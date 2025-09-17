@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acesso Liberado - Flute Pay</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      img {
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 100% !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+        }
+        .pad-sm {
+          padding: 12px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    "
+  >
+    <!-- Preheader -->
+    <div
+      style="
+        display: none;
+        max-height: 0px;
+        overflow: hidden;
+        font-size: 1px;
+        line-height: 1px;
+        color: #ffffff;
+        opacity: 0;
+      "
+    >
+      Olá {{name}}, seu acesso ao produto {{nome do produto}} foi liberado!
+      Aproveite.
+    </div>
+
+    <!-- Outer wrapper -->
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" style="padding: 24px 12px">
+          <!-- Main container -->
+          <table
+            class="container"
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            style="
+              width: 600px;
+              max-width: 600px;
+              background: #ffffff;
+              border-radius: 8px;
+              overflow: hidden;
+            "
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                style="
+                  padding: 20px 24px;
+                  background: #16a34a;
+                  color: #ffffff;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+              >
+                <h1 style="margin: 0; font-size: 20px; font-weight: 700">
+                  Flute Pay
+                </h1>
+              </td>
+            </tr>
+
+            <!-- Body content -->
+            <tr>
+              <td
+                style="
+                  padding: 24px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #111827;
+                  font-size: 16px;
+                  line-height: 1.5;
+                "
+              >
+                <p style="margin: 0 0 16px 0">Olá <strong>{{name}}</strong>,</p>
+
+                <p style="margin: 0 0 16px 0">
+                  Boa notícia 🎉 Seu pagamento foi confirmado e o acesso ao
+                  produto <strong>{{nome do produto}}</strong> já está liberado!
+                </p>
+
+                <!-- Detalhes -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  style="margin: 0 0 20px 0"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 12px;
+                        background: #f9fafb;
+                        border: 1px solid #e5e7eb;
+                        border-radius: 6px;
+                        font-size: 15px;
+                      "
+                    >
+                      <p style="margin: 0 0 6px 0">
+                        <strong>Produto:</strong> {{nome do produto}}
+                      </p>
+                      <p style="margin: 0 0 6px 0">
+                        <strong>Valor pago:</strong> {{valor}}
+                      </p>
+                      <p style="margin: 0">
+                        <strong>Forma de pagamento:</strong> {{forma_pagamento}}
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Botão de acesso -->
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  style="margin: 0 0 18px 0"
+                >
+                  <tr>
+                    <td align="center">
+                      <!--[if mso]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          href="{{link_acesso}}"
+                          style="
+                            height: 44px;
+                            v-text-anchor: middle;
+                            width: 220px;
+                          "
+                          arcsize="8%"
+                          stroke="f"
+                          fillcolor="#0b6cff"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #ffffff;
+                              font-family: Arial, Helvetica, sans-serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                            "
+                          >
+                            Acessar Produto
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                      <!--[if !mso]><!-- -->
+                      <a
+                        href="{{link_acesso}}"
+                        style="
+                          display: inline-block;
+                          background: #0b6cff;
+                          color: #ffffff;
+                          padding: 12px 22px;
+                          border-radius: 6px;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-size: 16px;
+                          font-weight: 700;
+                        "
+                      >
+                        Acessar Produto
+                      </a>
+                      <!--<![endif]-->
+                    </td>
+                  </tr>
+                </table>
+
+                <p style="margin: 0 0 12px 0; color: #6b7280; font-size: 14px">
+                  Caso o botão não funcione, copie e cole o link abaixo no
+                  navegador:<br />
+                  <a href="{{link_acesso}}" style="color: #0b6cff"
+                    >{{link_acesso}}</a
+                  >
+                </p>
+
+                <p style="margin: 20px 0 0 0">
+                  Se tiver qualquer dúvida, pode falar diretamente com o
+                  vendedor:
+                </p>
+
+                <p style="margin: 8px 0 2px 0">
+                  <strong>{{ Nome do Produtor }}</strong><br />
+                  <a
+                    href="mailto:{{ email do produtor }}"
+                    style="color: #0b6cff"
+                    >{{ email do produtor }}</a
+                  >
+                </p>
+
+                <p style="margin: 20px 0 0 0">
+                  Bom aproveitamento,<br /><strong>Equipe Flute Pay</strong>
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td
+                style="
+                  padding: 16px 24px;
+                  background: #f9fafb;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 12px;
+                  color: #6b7280;
+                  text-align: center;
+                "
+              >
+                <p style="margin: 0">
+                  Este e-mail foi enviado por Flute Pay. Se não reconhece esta
+                  compra, entre em contato com o suporte imediatamente.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problema no Pagamento - Flute Pay</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      img {
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 100% !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+        }
+        .mobile-center {
+          text-align: center !important;
+        }
+        .pad-sm {
+          padding: 12px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    "
+  >
+    <!-- Preheader -->
+    <div
+      style="
+        display: none;
+        max-height: 0px;
+        overflow: hidden;
+        font-size: 1px;
+        line-height: 1px;
+        color: #ffffff;
+        opacity: 0;
+      "
+    >
+      Olá {{ name }}, seu pagamento não foi autorizado. Veja como resolver e
+      concluir sua compra.
+    </div>
+
+    <!-- Outer wrapper -->
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" style="padding: 24px 12px">
+          <!-- Main container -->
+          <table
+            class="container"
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            style="
+              width: 600px;
+              max-width: 600px;
+              background: #ffffff;
+              border-radius: 8px;
+              overflow: hidden;
+            "
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                style="
+                  padding: 20px 24px;
+                  background: #dc2626;
+                  color: #ffffff;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+              >
+                <h1 style="margin: 0; font-size: 20px; font-weight: 700">
+                  Flute Pay
+                </h1>
+              </td>
+            </tr>
+
+            <!-- Body content -->
+            <tr>
+              <td
+                style="
+                  padding: 24px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #111827;
+                  font-size: 16px;
+                  line-height: 1.5;
+                "
+              >
+                <p style="margin: 0 0 16px 0">
+                  Olá <strong>{{ name }}</strong
+                  >,
+                </p>
+
+                <p style="margin: 0 0 16px 0">
+                  Infelizmente,
+                  <strong>não conseguimos aprovar o pagamento</strong> do
+                  produto <strong>{{nome do produto}}</strong> com o cartão
+                  informado.
+                </p>
+
+                <p
+                  style="margin: 0 0 18px 0; color: #dc2626; font-weight: bold"
+                >
+                  Motivo mais comum: cartão recusado pelo banco emissor.
+                </p>
+
+                <!-- Detalhes da tentativa -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  style="margin: 0 0 20px 0"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 12px;
+                        background: #f9fafb;
+                        border: 1px solid #e5e7eb;
+                        border-radius: 6px;
+                        font-size: 15px;
+                      "
+                    >
+                      <p style="margin: 0 0 6px 0">
+                        <strong>Produto:</strong> {{nome do produto}}
+                      </p>
+                      <p style="margin: 0 0 6px 0">
+                        <strong>Valor:</strong> {{ valor }}
+                      </p>
+                      <p style="margin: 0">
+                        <strong>Forma de pagamento:</strong> Cartão de Crédito
+                        (final {{ final_cartao }})
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <p style="margin: 0 0 16px 0">
+                  Para concluir sua compra, você pode:
+                </p>
+
+                <ul
+                  style="
+                    margin: 0 0 18px 20px;
+                    padding: 0;
+                    font-size: 15px;
+                    line-height: 1.6;
+                  "
+                >
+                  <li>Tentar novamente com o mesmo cartão;</li>
+                  <li>Usar um cartão diferente;</li>
+                  <li>Escolher outra forma de pagamento (Pix ou Boleto).</li>
+                </ul>
+
+                <!-- Botão para nova tentativa -->
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  style="margin: 0 0 18px 0"
+                >
+                  <tr>
+                    <td align="center">
+                      <!--[if mso]>
+                        <v:roundrect
+                          xmlns:v="urn:schemas-microsoft-com:vml"
+                          href="{{ link_pagamento }}"
+                          style="
+                            height: 44px;
+                            v-text-anchor: middle;
+                            width: 260px;
+                          "
+                          arcsize="8%"
+                          stroke="f"
+                          fillcolor="#0b6cff"
+                        >
+                          <w:anchorlock />
+                          <center
+                            style="
+                              color: #ffffff;
+                              font-family: Arial, Helvetica, sans-serif;
+                              font-size: 16px;
+                              font-weight: bold;
+                            "
+                          >
+                            Tentar Novamente o Pagamento
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                      <!--[if !mso]><!-- -->
+                      <a
+                        href="{{ link_pagamento }}"
+                        style="
+                          display: inline-block;
+                          background: #0b6cff;
+                          color: #ffffff;
+                          padding: 12px 22px;
+                          border-radius: 6px;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-size: 16px;
+                          font-weight: 700;
+                        "
+                      >
+                        Tentar Novamente o Pagamento
+                      </a>
+                      <!--<![endif]-->
+                    </td>
+                  </tr>
+                </table>
+
+                <p style="margin: 20px 0 0 0">
+                  Se precisar de ajuda, entre em contato com o vendedor:
+                </p>
+
+                <p style="margin: 8px 0 2px 0">
+                  <strong>{{ Nome do Produtor }}</strong
+                  ><br />
+                  <a
+                    href="mailto:{{ email do produtor }}"
+                    style="color: #0b6cff"
+                    >{{ email do produtor }}</a
+                  >
+                </p>
+
+                <p style="margin: 20px 0 0 0">Equipe Flute Pay</p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td
+                style="
+                  padding: 16px 24px;
+                  background: #f9fafb;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 12px;
+                  color: #6b7280;
+                  text-align: center;
+                "
+              >
+                <p style="margin: 0">
+                  Este e-mail foi enviado por Flute Pay. Caso não reconheça esta
+                  tentativa de compra, desconsidere a mensagem.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

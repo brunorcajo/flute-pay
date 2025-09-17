@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento Pix - Flute Pay</title>
+  <style>
+    /* Client-specific resets */
+    html,body { margin:0; padding:0; height:100%;}
+    img { border:0; -ms-interpolation-mode:bicubic; display:block; }
+    a { text-decoration:none; }
+    table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+    /* Responsive */
+    @media screen and (max-width:600px) {
+      .container { width:100% !important; }
+      .stack { display:block !important; width:100% !important; }
+      .mobile-center { text-align:center !important; }
+      .pad-sm { padding:12px !important; }
+    }
+  </style>
+</head>
+<body style="background-color:#f4f6f8; margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+  <!-- Preheader -->
+  <div style="display:none; max-height:0px; overflow:hidden; font-size:1px; line-height:1px; color:#ffffff; opacity:0;">
+    Olá {{name}}, falta apenas pagar o Pix para liberar o acesso ao seu produto.
+  </div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+        <!-- Main container -->
+        <table class="container" width="600" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; max-width:600px; background:#ffffff; border-radius:8px; overflow:hidden;">
+          <!-- Header -->
+          <tr>
+            <td style="padding:20px 24px; background:#0b6cff; color:#ffffff; font-family:Arial, Helvetica, sans-serif;">
+              <h1 style="margin:0; font-size:20px; font-weight:700;">Flute Pay</h1>
+            </td>
+          </tr>
+
+          <!-- Body content -->
+          <tr>
+            <td style="padding:24px; font-family:Arial, Helvetica, sans-serif; color:#111827; font-size:16px; line-height:1.45;">
+              <p style="margin:0 0 16px 0;">Olá <strong>{{name}}</strong>, tudo bem?</p>
+
+              <p style="margin:0 0 16px 0;">Somos a <strong>Flute Pay</strong>, a empresa que gerencia os pagamentos do produto <strong>{{nome do produto}}</strong>.</p>
+
+              <p style="margin:0 0 18px 0;">Agora <strong>só falta pagar o Pix</strong> para completar a sua compra!</p>
+
+              <ol style="margin:0 0 18px 20px; padding:0; font-size:15px; line-height:1.6;">
+                <li>Abra o app do seu banco e entre na opção Pix.</li>
+                <li>Escolha a opção <em>Pagar / Pix copia e cola</em>.</li>
+                <li>Escaneie o QR code. Se preferir, copie e cole o código.</li>
+                <li>Depois, confirme o pagamento.</li>
+              </ol>
+
+              <p style="margin:0 0 18px 0; color:#16a34a; font-weight:bold;">A aprovação leva no máximo 2 minutos.</p>
+
+              <!-- QR Code -->
+              <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 20px auto;">
+                <tr>
+                  <td align="center">
+                    <img src="https://checkout-api.kiwify.com.br/qrcode/3c2bb9ca-a328-4760-8893-4ca549adec32" alt="QR Code Pix" width="200" style="max-width:200px; border:1px solid #e5e7eb; border-radius:8px;">
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:16px 0; font-family: 'Courier New', Courier, monospace; font-size:15px; background:#f2f4f7; padding:12px; border-radius:6px; word-break:break-all;">
+                <strong>Código do Pix:</strong><br>
+                {{codigo do pix}}
+              </p>
+
+              <p style="margin:0 0 18px 0; font-size:16px;"><strong>Valor:</strong><br>{{valor}}</p>
+
+              <p style="margin:0 0 12px 0; color:#6b7280; font-size:14px;">
+                <strong>Importante:</strong> O acesso ao produto digital só será liberado após a confirmação do pagamento do Pix.
+              </p>
+
+              <p style="margin:0 0 8px 0;">Se você tiver qualquer dúvida, pode entrar em contato direto com o vendedor pelo e-mail abaixo:</p>
+
+              <p style="margin:0 0 2px 0;"><strong>{{ Nome do Produtor }}</strong><br>
+              <a href="mailto:{{ email do produtor }}" style="color:#0b6cff;">{{ email do produtor }}</a></p>
+
+              <p style="margin:20px 0 0 0;">Agradecemos desde já,<br><strong>Equipe Flute Pay</strong></p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:16px 24px; background:#f9fafb; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#6b7280; text-align:center;">
+              <p style="margin:0;">Este e-mail foi enviado por Flute Pay. Caso não reconheça esta compra, entre em contato com o suporte.</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Fallback -->
+        <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; max-width:600px; margin-top:12px;">
+          <tr>
+            <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#9aa0a6; text-align:center; padding:8px 12px;">
+              Caso a imagem do QR Code não apareça, copie e cole o código Pix acima no app do seu banco.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
