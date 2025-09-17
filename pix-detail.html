@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Checkout - Flute</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/index.css" />
+  </head>
+  <body class="bg-gray-50">
+    <header class="py-8">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-blue-900 tracking-tighter">flute</h1>
+      </div>
+    </header>
+    <main class="container mx-auto px-4 pb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-2 space-y-8">
+          <div class="flex items-center mb-8">
+            <div class="progress-step active">
+              <div
+                class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg"
+              >
+                <span class="material-icons-outlined">check</span>
+              </div>
+              <span class="ml-4 font-semibold text-gray-800 text-lg"
+                >Identificação</span
+              >
+            </div>
+            <div class="progress-line">
+              <div class="progress-line-fill"></div>
+            </div>
+            <div class="progress-step active">
+              <div
+                class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg"
+              >
+                <span class="material-icons-outlined">check</span>
+              </div>
+              <span class="ml-4 font-semibold text-gray-800 text-lg"
+                >Pagamento</span
+              >
+            </div>
+            <div class="progress-line">
+              <div class="progress-line-fill"></div>
+            </div>
+            <div class="progress-step active">
+              <div
+                class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg"
+              >
+                3
+              </div>
+              <span class="ml-4 font-semibold text-gray-800 text-lg"
+                >Confirmação</span
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="text-center">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                Pix gerado, agora finalize o pagamento conforme as instruções
+                abaixo.
+              </h2>
+              <p class="text-gray-600 mb-8 text-lg">
+                A confirmação leva no máximo 2 minutos.
+              </p>
+              <div class="max-w-md mx-auto bg-gray-50 p-8 rounded-2xl">
+                <div class="mb-6">
+                  <div
+                    class="flex justify-between items-center text-sm font-medium text-gray-600 mb-2"
+                  >
+                    <span>Expira em:</span>
+                    <span>07:30</span>
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+                  >
+                    <div
+                      class="bg-blue-600 h-2.5 rounded-full"
+                      style="width: 50%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="flex justify-center mb-6">
+                  <img
+                    alt="QR Code PIX"
+                    class="rounded-lg shadow-md"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP6W0b3Q33yKQxNhuJ-ZfwE9UYJoWFOr3mtHQg9iqZw4YrUqyY0lF5f4642XzNq7xLmPenVvc5dBEHyz58-SznRlc7aqm_9YkJmb2b3eo5zo3BsimYdADQJrYKTrJGf1VT-V7tDCQw4vE9ZgQijiiPhkqVdWNC6U5ami9A9wCRommV5ZmUwk61AwGdJtwsjLxYGfp1Nrk3wI5Q5IGv_sxwB34neIhEyed0EtjpmibTcurRZ_h8mRPJSRb8ZVOkewKyH13jX5ZS_KQ"
+                  />
+                </div>
+                <button
+                  class="w-full bg-blue-100 text-blue-800 font-semibold py-4 px-6 rounded-lg flex items-center justify-center space-x-2 transition hover:bg-blue-200"
+                >
+                  <span class="material-icons-outlined">content_copy</span>
+                  <span>Copiar código do Pix</span>
+                </button>
+              </div>
+              <div class="mt-12 text-left max-w-lg mx-auto">
+                <ol class="space-y-6">
+                  <li class="flex items-start">
+                    <div
+                      class="bg-blue-100 text-blue-700 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0"
+                    >
+                      1
+                    </div>
+                    <p class="text-gray-700 text-lg">
+                      Abra o app do seu banco e entre na opção PIX
+                    </p>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="bg-blue-100 text-blue-700 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0"
+                    >
+                      2
+                    </div>
+                    <p class="text-gray-700 text-lg">
+                      Escolha a opção Pagar / Pix copia e cola
+                    </p>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="bg-blue-100 text-blue-700 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0"
+                    >
+                      3
+                    </div>
+                    <p class="text-gray-700 text-lg">
+                      Escaneie o QR code. Se preferir, copie e cole o código
+                    </p>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="bg-blue-100 text-blue-700 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0"
+                    >
+                      4
+                    </div>
+                    <p class="text-gray-700 text-lg">Confirme o pagamento</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-1">
+          <div class="card sticky top-8">
+            <h2
+              class="text-2xl font-semibold text-gray-800 mb-6 flex items-center"
+            >
+              <span class="material-icons-outlined mr-3 text-blue-600"
+                >shopping_cart</span
+              >
+              Resumo do Pedido
+            </h2>
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <img
+                  alt="Capa do curso Roteirização Teoria e Prática 2"
+                  class="w-20 h-20 rounded-lg object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz_M1gI2xus-xC69Y-SH5Z4kacgPV5WoOO52edny4Qqs25CX7FE5qiM258DyidRYPszEuWhW7iuVH0ByDEJSPaJNOj4hKsOoDAXihiTnl7XQr3NHMeFewG_mJQ8UOD-wPtZikgj2pdrvwxWKPTlRUmlep7jU7GKbD5iqC80ABO4q2lg6ycJSU8NAMlX50rZT3BH_Dih33OowQKZIoQjXOrgdxGFppf7qquBMCkB98QMcMVwWOojxeRvz3K-BlMrSJgM83w65R9xps"
+                />
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800">
+                    Roteirização Teoria e Prática 2
+                  </h3>
+                  <p class="text-sm text-gray-500">Curso online</p>
+                </div>
+                <p class="font-semibold text-gray-800">R$ 97,00</p>
+              </div>
+            </div>
+            <hr class="my-8 border-t-2 border-dashed border-gray-200" />
+            <div class="space-y-4 text-gray-600">
+              <div class="flex justify-between">
+                <span>Subtotal</span>
+                <span class="font-medium text-gray-800">R$ 97,00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Método de Pagamento</span>
+                <span class="font-medium text-gray-800">PIX</span>
+              </div>
+              <div
+                class="flex justify-between text-xl font-semibold text-gray-800 pt-4 border-t border-gray-200"
+              >
+                <span>Total</span>
+                <span>R$ 97,00</span>
+              </div>
+            </div>
+            <div
+              class="mt-8 bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 text-center"
+            >
+              <p class="font-semibold flex items-center justify-center">
+                <span class="material-icons-outlined mr-2">timer</span
+                >Aguardando pagamento...
+              </p>
+            </div>
+            <p
+              class="text-xs text-gray-500 mt-4 text-center flex items-center justify-center"
+            >
+              <span class="material-icons-outlined text-sm mr-1"
+                >verified_user</span
+              >
+              Compra 100% segura. Seus dados estão protegidos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
