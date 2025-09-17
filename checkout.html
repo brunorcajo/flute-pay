@@ -190,57 +190,33 @@
               </div>
             </div>
             <div class="space-y-6" id="pix-payment">
-              <p class="text-center text-gray-600">
-                Para pagar, escaneie o QR Code abaixo com o app do seu banco ou
-                copie o código Pix.
-              </p>
-              <div
-                class="flex flex-col md:flex-row items-center justify-center gap-8 p-6 bg-gray-50 rounded-lg"
-              >
-                <div class="w-full md:w-auto text-center">
-                  <div class="mb-4">
-                    <div
-                      class="flex justify-between items-center text-sm font-medium text-gray-600 mb-1"
-                    >
-                      <span>Expira em:</span>
-                      <span class="font-semibold text-blue-800">09:59</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="progress-bar-fill" style="width: 75%"></div>
-                    </div>
-                  </div>
-                  <div class="flex-shrink-0 inline-block">
-                    <img
-                      alt="QR Code PIX"
-                      class="rounded-lg shadow-md"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoGZKm9w7J9LDsBIADmdw8Xt6vinq9YXEVaMfdN7Hc8f3L-SREhGTWCMYMJlB2er3C2nbuT3eWUbR9NlC7xOL1XDX8TTNQhjcaGieu8k1PMP6wxC2lhjfZF72e0rQ-dM0Q1LJ7472z_SJ7peoF6h9dUXvFIJAFedv-2DPL0SUlVvMiUy3f7uJV11BuBPaP_IQ_Az8EEAq1htJq5NkoSuIHTAoM-6q98TifQ9LA3RLqCn70Mk5k7v2W0_T337DrkqWQcCi57OwLdUk"
-                    />
-                  </div>
-                </div>
-                <div class="text-center md:text-left flex-grow">
-                  <p class="font-semibold text-gray-800 text-lg mb-2">
-                    Pague com Pix Copia e Cola
-                  </p>
-                  <p class="text-sm text-gray-500 mb-4">
-                    Clique para copiar o código abaixo.
-                  </p>
-                  <div class="relative">
-                    <input
-                      class="w-full bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 pr-12 truncate"
-                      readonly=""
-                      type="text"
-                      value="00020126580014br.gov.bcb.pix0136123e4567-e12b-12d1-a456-426655440000"
-                    />
-                    <button
-                      class="absolute right-0 top-0 h-full px-4 text-blue-600 hover:bg-blue-100 rounded-r-lg flex items-center"
-                      title="Copiar código"
-                    >
-                      <span class="material-icons-outlined">content_copy</span>
-                    </button>
+              <div class="bg-gray-50 rounded-lg p-8">
+                <div class="space-y-6">
+                  <h3 class="text-2xl font-bold text-gray-800 text-left">
+                    Pague com PIX
+                  </h3>
+                  <div class="space-y-4 text-gray-600">
+                    <p class="flex items-center justify-start">
+                      <span class="material-icons-outlined mr-2 text-blue-500"
+                        >bolt</span
+                      >Liberação imediata
+                    </p>
+                    <p class="flex items-center justify-start">
+                      <span class="material-icons-outlined mr-2 text-blue-500"
+                        >phone_iphone</span
+                      >É simples, só usar o aplicativo de seu banco para pagar
+                      PIX
+                    </p>
+                    <p class="flex items-center justify-start">
+                      <span class="material-icons-outlined mr-2 text-blue-500"
+                        >security</span
+                      >Super seguro. O pagamento PIX foi desenvolvido pelo Banco
+                      Central para facilitar pagamentos.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="text-center text-sm text-gray-500">
+              <div class="text-center text-sm text-gray-500 mt-6">
                 <p>
                   Ao finalizar a compra, você concorda com nossos
                   <a class="text-blue-600 hover:underline" href="#"
@@ -352,6 +328,43 @@
                   <option>3x de R$ 25,00 sem juros</option>
                 </select>
               </div>
+              <div class="text-center text-sm text-gray-500 mt-6">
+                <p>
+                  Ao finalizar a compra, você concorda com nossos
+                  <a class="text-blue-600 hover:underline" href="#"
+                    >Termos de Uso</a
+                  >.
+                </p>
+              </div>
+            </div>
+            <div class="hidden space-y-6" id="billet-payment">
+              <div class="bg-gray-50 rounded-lg p-8">
+                <div class="space-y-6">
+                  <h3 class="text-2xl font-bold text-gray-800 text-left">
+                    Pague com Boleto
+                  </h3>
+                  <div class="space-y-4 text-gray-600">
+                    <p class="flex items-center justify-start">
+                      <span class="material-icons-outlined mr-2 text-blue-500"
+                        >warning</span
+                      >O boleto não pode ser parcelado
+                    </p>
+                    <p class="flex items-center justify-start">
+                      <span class="material-icons-outlined mr-2 text-blue-500"
+                        >schedule</span
+                      >Pode levar até dois dias úteis para aprovar sua compra
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center text-sm text-gray-500 mt-6">
+                <p>
+                  Ao finalizar a compra, você concorda com nossos
+                  <a class="text-blue-600 hover:underline" href="#"
+                    >Termos de Uso</a
+                  >.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -439,7 +452,9 @@
       const paymentOptions = document.querySelectorAll(".payment-option");
       const pixPayment = document.getElementById("pix-payment");
       const cardPayment = document.getElementById("card-payment");
-      const formFields = [pixPayment, cardPayment];
+      const boletoPayment = document.getElementById("billet-payment");
+      const methodInput = document.getElementById("Method");
+      const formFields = [pixPayment, cardPayment, boletoPayment];
       paymentOptions.forEach((option) => {
         option.addEventListener("click", () => {
           paymentOptions.forEach((opt) => opt.classList.remove("active"));
@@ -450,8 +465,10 @@
             pixPayment.classList.remove("hidden");
           } else if (selectedMethod === "Cartão de Crédito") {
             cardPayment.classList.remove("hidden");
-          }
-          // Add logic for Boleto if needed
+          } else if (selectedMethod === "Boleto") {
+              boletoPayment.classList.remove("hidden");
+              methodInput.value = '0';
+            }
         });
       });
     </script>
