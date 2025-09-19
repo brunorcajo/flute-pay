@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Obrigado pelo seu Pedido - Flute</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/index.css" />
+  </head>
+  <body class="bg-gray-50">
+    <header class="py-8">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-blue-900 tracking-tighter">flute</h1>
+      </div>
+    </header>
+    <main class="container mx-auto px-4 pb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-2 space-y-8">
+          <div class="flex items-center mb-8">
+            <div class="progress-step active">
+              <div
+                class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg"
+              >
+                <span class="material-icons-outlined">check</span>
+              </div>
+              <span class="ml-4 font-semibold text-gray-800 text-lg"
+                >Identificação</span
+              >
+            </div>
+            <div class="progress-line">
+              <div class="progress-line-fill"></div>
+            </div>
+            <div class="progress-step active">
+              <div
+                class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg"
+              >
+                <span class="material-icons-outlined">check</span>
+              </div>
+              <span class="ml-4 font-semibold text-gray-800 text-lg"
+                >Pagamento</span
+              >
+            </div>
+            <div class="progress-line">
+              <div class="progress-line-fill"></div>
+            </div>
+            <div class="progress-step active">
+              <div
+                class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg"
+              >
+                <span class="material-icons-outlined">check</span>
+              </div>
+              <span class="ml-4 font-semibold text-gray-800 text-lg"
+                >Confirmação</span
+              >
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="mb-6">
+              <span class="material-icons-outlined text-7xl text-green-500"
+                >check_circle</span
+              >
+            </div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              Compra realizada com sucesso!
+            </h2>
+            <p class="text-gray-600 mb-8 text-lg max-w-2xl mx-auto">
+              Seu pagamento foi aprovado e o seu acesso já está garantido.
+              Confira seu e-mail para mais detalhes.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8"
+            >
+              <a class="btn-primary" href="#">Explorar mais produtos</a>
+              <a
+                class="bg-gray-200 text-gray-800 font-semibold py-4 px-6 rounded-lg flex items-center justify-center space-x-2 transition hover:bg-gray-300"
+                href="#"
+              >
+                <span class="material-icons-outlined">receipt_long</span>
+                <span>Ver meus pedidos</span>
+              </a>
+            </div>
+            <p class="text-gray-500 text-sm">
+              Você terá acesso imediato ao conteúdo e pode começar agora mesmo.
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-1">
+          <div class="card sticky top-8">
+            <h2
+              class="text-2xl font-semibold text-gray-800 mb-6 flex items-center"
+            >
+              <span class="material-icons-outlined mr-3 text-blue-600"
+                >shopping_cart</span
+              >
+              Resumo do Pedido
+            </h2>
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <img
+                  alt="Capa do curso Roteirização Teoria e Prática 2"
+                  class="w-20 h-20 rounded-lg object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz_M1gI2xus-xC69Y-SH5Z4kacgPV5WoOO52edny4Qqs25CX7FE5qiM258DyidRYPszEuWhW7iuVH0ByDEJSPaJNOj4hKsOoDAXihiTnl7XQr3NHMeFewG_mJQ8UOD-wPtZikgj2pdrvwxWKPTlRUmlep7jU7GKbD5iqC80ABO4q2lg6ycJSU8NAMlX50rZT3BH_Dih33OowQKZIoQjXOrgdxGFppf7qquBMCkB98QMcMVwWOojxeRvz3K-BlMrSJgM83w65R9xps"
+                />
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800">
+                    Roteirização Teoria e Prática 2
+                  </h3>
+                  <p class="text-sm text-gray-500">Curso online</p>
+                </div>
+                <p class="font-semibold text-gray-800">R$ 97,00</p>
+              </div>
+            </div>
+            <hr class="my-8 border-t-2 border-dashed border-gray-200" />
+            <div class="space-y-4 text-gray-600">
+              <div class="flex justify-between">
+                <span>Subtotal</span>
+                <span class="font-medium text-gray-800">R$ 97,00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Método de Pagamento</span>
+                <span class="font-medium text-gray-800"
+                  >Pagamento Confirmado</span
+                >
+              </div>
+              <div
+                class="flex justify-between text-xl font-semibold text-gray-800 pt-4 border-t border-gray-200"
+              >
+                <span>Total</span>
+                <span>R$ 97,00</span>
+              </div>
+            </div>
+            <div
+              class="mt-8 bg-green-100 border border-green-300 text-green-800 rounded-lg p-4 text-center"
+            >
+              <p class="font-semibold flex items-center justify-center">
+                <span class="material-icons-outlined mr-2">check_circle</span
+                >Pagamento Aprovado
+              </p>
+            </div>
+            <p
+              class="text-xs text-gray-500 mt-4 text-center flex items-center justify-center"
+            >
+              <span class="material-icons-outlined text-sm mr-1"
+                >verified_user</span
+              >
+              Compra 100% segura. Seus dados estão protegidos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
